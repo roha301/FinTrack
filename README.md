@@ -212,7 +212,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 - **Issues**: [GitHub Issues](https://github.com/roha301/FinTrack/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/roha301/FinTrack/discussions)
-- **Email**: [your-email@example.com](mailto:your-email@example.com)
+- **Email**: [ghugerohan13@gmail.com](mailto:your-ghugerohan13@gmail.com)
 
 ---
 
