@@ -22,7 +22,7 @@ export default function SignUpPage() {
   const [otpSentTime, setOtpSentTime] = useState<number | null>(null)
   const [showPassword, setShowPassword] = useState(false)
   const [showConfirmPassword, setShowConfirmPassword] = useState(false)
-  const [countdown, setCountdown] = useState(60)
+  const [countdown, setCountdown] = useState(300)
   const { toast } = useToast()
   const router = useRouter()
 
@@ -97,7 +97,7 @@ export default function SignUpPage() {
 
       toast({
         title: "OTP Sent!",
-        description: "Please check your email for the 8-digit verification code. It expires in 60 seconds.",
+        description: "Please check your email for the 8-digit verification code. It expires in 5 minutes.",
       })
     } catch (error: any) {
       toast({
@@ -183,10 +183,10 @@ export default function SignUpPage() {
   }
 
   const handleResendOTP = async () => {
-    if (otpSentTime && Date.now() - otpSentTime < 60000) {
+    if (otpSentTime && Date.now() - otpSentTime < 30000) {
       toast({
         title: "Please wait",
-        description: "You can request a new code after 60 seconds.",
+        description: "You can request a new code after 30 seconds.",
         variant: "destructive",
       })
       return
