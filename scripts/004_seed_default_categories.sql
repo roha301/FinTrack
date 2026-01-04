@@ -1,0 +1,2 @@
+-- This script will be used to seed default categories for new users
+-- We'll handle this in the application code after email confirmation

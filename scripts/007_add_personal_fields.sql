@@ -1,0 +1,7 @@
+-- Add personal fields to profiles table
+ALTER TABLE public.profiles
+ADD COLUMN IF NOT EXISTS gender TEXT,
+ADD COLUMN IF NOT EXISTS birthdate DATE,
+ADD COLUMN IF NOT EXISTS age INTEGER,
+ADD COLUMN IF NOT EXISTS phone TEXT,
+ADD COLUMN IF NOT EXISTS address TEXT;
