@@ -43,7 +43,7 @@ export function BudgetProgress({ budgets, totalExpenses }: BudgetProgressProps) 
                 <div>
                   <p className="font-medium">Overall Monthly Budget</p>
                   <p className="text-xs text-muted-foreground">
-                    {budgets.length} budget{budgets.length !== 1 ? "s" : ""} active
+                    {budgets.length} budget{budgets.length !== 1 ? 's' : ""} active
                   </p>
                 </div>
               </div>
